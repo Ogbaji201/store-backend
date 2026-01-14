@@ -20,12 +20,20 @@
 // });
 
 // config/admin.js
-module.exports = ({ env }) => ({
+export default ({ env }) => ({
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
+    // Optional: remove your old expiresIn config elsewhere; use sessions if you want.
+    sessions: {
+      maxSessionLifespan: '7d',
+      maxRefreshTokenLifespan: '30d',
+    },
   },
 
-  // recommended for production stability:
+  secrets: {
+    encryptionKey: env('ADMIN_ENCRYPTION_KEY'),
+  },
+
   apiToken: {
     salt: env('API_TOKEN_SALT'),
   },
