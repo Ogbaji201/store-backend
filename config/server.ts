@@ -9,7 +9,7 @@
 
 export default ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337), // keep your Railway port if you want 8080
+  port: env.int('PORT', 8080), // keep your Railway port if you want 8080
   url: env('PUBLIC_URL'),
   proxy: true,
 
