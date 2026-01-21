@@ -1,30 +1,4 @@
 
-// export default [
-//   'strapi::errors',
-//   'strapi::security',
-//   {
-//     name: 'strapi::cors',
-//     config: {
-//       origin: [
-//         'https://cheryblisshealth.com',
-//         'https://store-backend-production-0858.up.railway.app',
-//         // add your Vercel frontend too:
-//         // 'https://your-frontend.vercel.app',
-//       ],
-//       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-//       credentials: true,
-//       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-//     },
-//   },
-//   'strapi::poweredBy',
-//   'strapi::logger',
-//   'strapi::query',
-//   'strapi::body',
-//   'strapi::session',
-//   'strapi::favicon',
-//   'strapi::public',
-// ];
-
 
 export default [
   'strapi::errors',
@@ -61,7 +35,12 @@ export default [
         'http://localhost:1338',
         'http://localhost:3001',
         'https://cheryblisshealth.com',
+        'https://www.cheryblisshealth.com',
         'https://store-backend-production-0858.up.railway.app',
+        'https://api.cheryblisshealth.com',
+
+
+
       ],
       headers: [
         'Content-Type',
